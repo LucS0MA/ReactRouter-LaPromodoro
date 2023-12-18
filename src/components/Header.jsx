@@ -7,18 +7,12 @@ import "./Header.css";
 function Header() {
   return (
     <nav className="header">
-      <Link to="/">
-        <img src={reactLogo} className="logo react" alt="React logo" />
-      </Link>
       <ul className="head-menu">
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/characters">Characters</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/jeu ">Jeu</Link>
         </li>
       </ul>
     </nav>
