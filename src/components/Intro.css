@@ -14,12 +14,13 @@
   justify-content: center;
 }
 .introPicture {
-  width: 30rem;
+  width: 40rem;
   height: 50%;
   object-fit: cover;
 }
 
 .infoIntroContainer {
+  width: 50%;
   margin-left: 2rem;
   margin-right: 2rem;
   display: flex;
