@@ -6,7 +6,7 @@ function Characters() {
 
   useEffect(() => {
     console.log("je suis dans le useEffect");
-    fetch("https://github.com/Gwenaelbegot/cardGames/blob/main/cardGames.json")
+    fetch("https://github.com/codeIsHard2023/ReactRouter-LaPromodoro/blob/002A-Composant_Card/cardGames.json")
       .then((res) => res.json())
       .then((data) => setCharactersInfos(data));
   }, []);
