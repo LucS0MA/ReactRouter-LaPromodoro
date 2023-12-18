@@ -1,19 +1,26 @@
-.header {
-  background-color: #213547;
+.navBar {
+  background-color: #1A1A1A;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0 5rem 0 2rem;
   align-items: center;
   color: white;
 }
-.head-menu {
-  list-style: none;
-  display: flex;
+
+.navBarLogo {
+  width: 150px;
 }
-.head-menu li {
-  margin: 10px;
+
+.navBarButton {
+  padding: 0.7rem 2.5rem;
+  background-color: inherit;
+  border-style: solid;
+  border-color: #9FEFBB;
+  border-radius: 50px;
+  color: #9FEFBB;
 }
-.head-menu a {
-  color: white;
-  text-decoration: none;
+
+.navBarButton:hover {
+  background-color: #9FEFBB;
+  color: #1A1A1A;
 }
