@@ -1,4 +1,9 @@
+import Intro from "../components/Intro";
 function Home() {
-  return <div>page Home Poulet</div>;
+  return (
+    <div>
+      <Intro />
+    </div>
+  );
 }
 export default Home;
