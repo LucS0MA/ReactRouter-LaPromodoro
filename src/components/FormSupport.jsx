@@ -1,11 +1,12 @@
 import "./FormSupport.css";
 
-function FormSupport() {
-  const handleClick = () => {
-    console.log("sended");
+function FormSupport({ onSubmit }) {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    onSubmit();
   };
   return (
-    <form className="contactForm" action="">
+    <form className="contactForm" action="" onSubmit={handleSubmit}>
       <div className="formUserName">
         <label htmlFor="name">Enter your name :</label>
         <input type="text" name="name" id="name" placeholder="Your name" />
@@ -25,12 +26,7 @@ function FormSupport() {
         ></textarea>
       </div>
       <div className="submitButton">
-        <input
-          type="submit"
-          value="Submit"
-          id="submit"
-          onClick={() => handleClick()}
-        />
+        <input type="submit" value="Submit" id="submit" />
       </div>
     </form>
   );

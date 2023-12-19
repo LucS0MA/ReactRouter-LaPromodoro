@@ -9,7 +9,7 @@ function Footer() {
     <footer className="footer">
       <div className="footerText">
         <span>&copy;Promodoro 2023 </span>
-        <span> Star Wars </span>{" "}
+        <span> Star Fights </span>
         <img id="yodaFooter" src={iconYoda} alt="Yoda picture" />
       </div>
       <div className="collaboratorsList">

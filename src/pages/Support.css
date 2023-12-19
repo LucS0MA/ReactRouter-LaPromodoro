@@ -1,22 +1,10 @@
-html,
-body {
+.supportContainer {
   height: 100%;
-}
-body {
-  overflow-y: hidden;
-  display: flex;
-  flex-direction: column;
-}
-main {
-  height: 100%;
-  flex-grow: 1;
   background-image: url("../assets/bcgSupport.png");
   background-size: cover;
-}
-.formContainer {
-  padding-top: 10rem;
-  margin-bottom: 11.5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex-grow: 1;
 }
