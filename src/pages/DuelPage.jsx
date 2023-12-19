@@ -83,9 +83,44 @@ const DuelPage = () => {
       const cardImages = document.querySelectorAll('.cartes-container img');
       cardImages.forEach((img) => img.classList.add('collision'));
 
+      const nameElements = document.querySelectorAll('.cartes-container .nameDuel');
+      nameElements.forEach((name) => name.classList.add('collision'));
+
+      const nameAdversaireElements = document.querySelectorAll('.cartes-container .nameDuelOrdi');
+      nameAdversaireElements.forEach((name) => name.classList.add('collision'));
+
+      const atkElements = document.querySelectorAll('.cartes-container .atkDuel');
+      atkElements.forEach((atk) => atk.classList.add('collision'));
+
+      const atkAdversaireElements = document.querySelectorAll('.cartes-container .atkDuelOrdi');
+      atkAdversaireElements.forEach((atk) => atk.classList.add('collision'));
+
+      const defElements = document.querySelectorAll('.cartes-container .defDuel');
+      defElements.forEach((def) => def.classList.add('collision'));
+
+      const defAdversaireElements = document.querySelectorAll('.cartes-container .defDuelOrdi');
+      defAdversaireElements.forEach((def) => def.classList.add('collision'));
+
+      const pvElements = document.querySelectorAll('.cartes-container .pvDuel');
+      pvElements.forEach((pv) => pv.classList.add('collision'));
+
+      const pvAdversaireElements = document.querySelectorAll('.cartes-container .pvDuelOrdi');
+      pvAdversaireElements.forEach((pv) => pv.classList.add('collision'));
+
       setTimeout(() => {
         cardImages.forEach((img) => img.classList.remove('collision'));
+        nameElements.forEach((name) => name.classList.remove('collision'));
+        atkElements.forEach((atk) => atk.classList.remove('collision'));
+        defElements.forEach((def) => def.classList.remove('collision'));
+        pvElements.forEach((pv) => pv.classList.remove('collision'));
+  
+        nameAdversaireElements.forEach((name) => name.classList.remove('collision'));
+        atkAdversaireElements.forEach((atk) => atk.classList.remove('collision'));
+        defAdversaireElements.forEach((def) => def.classList.remove('collision'));
+        pvAdversaireElements.forEach((pv) => pv.classList.remove('collision'));
       }, 500);
+
+
     }
   };
 
@@ -114,31 +149,42 @@ const DuelPage = () => {
   return (
     <div className="duel-page">
       <div className="cartes-container">
-        <div key={selectedCard?.id}>
+        <div key={selectedCard?.id} className="carte-duel">
+          <p className='nameDuel'>{selectedCard.name}</p>
+          <p className='atkDuel'>{selectedCard.atk}</p>
+          <p className='defDuel'>{selectedCard.def}</p>
+          <p className='pvDuel'>{selectedCard.pv}</p>
           <p><img src={selectedCard?.image} alt="Selected Card" /></p>
         </div>
-        <div key={adversaireCard?.id}>
+  
+        
+        <div key={adversaireCard?.id} className="adversaire-card">
+          <p className='nameDuelOrdi'>{adversaireCard.name}</p>
+          <p className='atkDuelOrdi'>{adversaireCard.atk}</p>
+          <p className='defDuelOrdi'>{adversaireCard.def}</p>
+          <p className='pvDuelOrdi'>{adversaireCard.pv}</p>
           <p><img src={adversaireCard?.image} alt="Adversary Card" /></p>
         </div>
+        
       </div>
-
+  
       {!resultatDuel && (
         <>
           <button className="star-wars-button" onClick={handleDuel} disabled={!tourUtilisateur}>
             Attaquer
           </button>
-
+  
           <button className="star-wars-button" onClick={utiliserCompetenceSpeciale} disabled={!competenceSpecialeActive}>
             Compétence Spéciale
           </button>
         </>
       )}
-
+  
       <button className="star-wars-button" onClick={() => navigate('/jeu')}>
         Retour à la sélection de personnage
       </button>
     </div>
   );
-};
+   }
 
-export default DuelPage;
+   export default DuelPage;
