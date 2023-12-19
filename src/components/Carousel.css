@@ -11,6 +11,7 @@
   justify-content: center;
 }
 
+
 /* .logoslide {
   height: 45px;
   width: 120px;
@@ -51,6 +52,7 @@
 .slide .slideimage {
   width: 100%;
   height: 550px;
+
 }
 
 .SlideHead {
@@ -89,6 +91,7 @@
   top: 250px;
   cursor: pointer;
   transition: 0.5s;
+  color: #fad02c;
 }
 
 .arrow:hover {

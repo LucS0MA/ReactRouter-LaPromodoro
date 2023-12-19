@@ -6,6 +6,9 @@
     background-size: cover; /* Adjust as needed */
 
 }
+.spanColor{
+    color: #FAD02C;
+}
 .TitleJeu{
     margin-left: 12%;
     color: white;
@@ -21,4 +24,8 @@
     font-family: 'Starjedi';
     font-size: 1.5em;
 
+}
+
+img {
+    cursor: pointer;
 }
