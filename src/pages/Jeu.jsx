@@ -6,7 +6,6 @@ function Jeu() {
   return (
     <div>
       <DuelCard />
-      
     </div>
   );
 }

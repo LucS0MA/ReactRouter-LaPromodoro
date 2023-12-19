@@ -27,7 +27,10 @@ const DuelCard = () => {
     navigate('/duel', { state: { selectedCard: carte, adversaireCard } });
   };
   return (
+   
     <div className="duel-card">
+      <h1 class="TitleJeu">star fights:</h1>
+      <p className='infosTexte'>Bienvenue, dans le jeu "Star Fights. </p>
       <div className="cartes-container">
         {cartes.map((carte) => (
           <CarteDuel
