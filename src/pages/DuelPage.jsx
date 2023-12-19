@@ -11,7 +11,6 @@ const DuelPage = () => {
   const [pvUtilisateur, setPvUtilisateur] = useState(selectedCard?.pv || 0);
   const [pvAdversaire, setPvAdversaire] = useState(adversaireCard?.pv || 0);
   const [coupsCritiques, setCoupsCritiques] = useState(0);
-  const [competenceSpecialeActive, setCompetenceSpecialeActive] = useState(false);
 
   const navigate = useNavigate();
 
@@ -33,29 +32,29 @@ const DuelPage = () => {
     let degatsInfligesDefenseur = Math.max(5, defenseur?.atk - attaquant?.def);
 
     const chanceCoupCritiqueUtilisateur = Math.random() <= 0.3;
-    const chanceCoupCritiqueAdversaire = Math.random() <= 0.3;
+    const chanceCoupCritiqueAdversaire = Math.random() <= 0.1;
 
     if (chanceCoupCritiqueUtilisateur) {
        compteurUti++;
        console.log("Coup critUtilisateur")
 
-      if(compteurUti === 3 ){
-        degatsInfligesUtilisateur *=6;
-      } else {
-        degatsInfligesUtilisateur *= 2;
-      }
+    //   if(compteurUti === 3 ){
+    //     degatsInfligesUtilisateur *=6;
+    //   } else {
+    // }
+    degatsInfligesUtilisateur *= 2;
 
       setCoupsCritiques(prevCoupsCritiques => prevCoupsCritiques + 1);
     }
     if (chanceCoupCritiqueAdversaire) {
       console.log("Coup critAdversaire")
       
-      compteurAd++;
-      if(compteurAd === 3 ){
-        degatsInfligesDefenseur *=6;
-      }else{
-        degatsInfligesDefenseur *= 2;
-      }
+    //   compteurAd++;
+    //   if(compteurAd === 3 ){
+    //     degatsInfligesDefenseur *=6;
+    //   }else{
+    // }
+    degatsInfligesDefenseur *= 2;
     }
 
 
@@ -154,6 +153,7 @@ const DuelPage = () => {
   useEffect(() => {
     if (pvUtilisateur <= 0 || pvAdversaire <= 0) {
       setResultatDuel(pvUtilisateur <= 0 ? 'défaite' : 'victoire');
+      console.log('Résultat du duel :', resultatDuel);
       toggleModal(); 
     }
   }, [pvUtilisateur, pvAdversaire]);
@@ -168,7 +168,7 @@ const DuelPage = () => {
           <p className='pvDuel'>{selectedCard.pv}</p>
           <p><img src={selectedCard?.image} alt="Selected Card" /></p>
         </div>
-        <div className="Vs"></div>
+        <div className="Vs"><img src = {'src/assets/image/Image-Vs.jpg'}/></div>
         
         <div key={adversaireCard?.id} className="adversaire-card">
           <p className='nameDuelOrdi'>{adversaireCard.name}</p>
@@ -196,7 +196,7 @@ const DuelPage = () => {
         Retour à la sélection de personnage
       </button>
       {modalVisible && (
-        <DuelResultModal onClose={() => navigate('/jeu')} />
+        <DuelResultModal result={resultatDuel}  onClose={() => navigate('/jeu')} />
       )}
     </div>
     

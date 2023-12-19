@@ -126,16 +126,14 @@ position: relative;
     border: 2px solid #ffe81f; /* Jaune lightsaber */
     color: #ffe81f; /* Jaune lightsaber */
     background-color: #000; /* Fond noir */
+    border-radius: 40px;
   
     /* Ajouter une transition pour une animation fluide */
     transition: background-color 0.3s, color 0.3s;
   }
 
 
-  .resultat-duel {
-    color: #ffd700;
-  }
-
+ 
   .Vs{
     display: flex;
     align-items: center;
