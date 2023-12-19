@@ -12,15 +12,15 @@
 }
 
 .navBarButton {
-  padding: 0.7rem 2.5rem;
+  padding: 0.7rem 3rem;
   background-color: inherit;
   border-style: solid;
-  border-color: #9FEFBB;
+  border-color: #45b76d;
   border-radius: 50px;
-  color: #9FEFBB;
+  color: #45b76d;
 }
 
 .navBarButton:hover {
-  background-color: #9FEFBB;
+  background-color: #45b76d;
   color: #1A1A1A;
 }
