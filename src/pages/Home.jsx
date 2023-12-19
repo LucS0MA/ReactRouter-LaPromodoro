@@ -1,4 +1,12 @@
+import "./Home.css";
+import ComponentParallax from "../components/ComponentParallax";
 function Home() {
-  return <div>page Home Poulet</div>;
+  return (
+    <>
+      <div>
+        <ComponentParallax />
+      </div>
+    </>
+  );
 }
 export default Home;

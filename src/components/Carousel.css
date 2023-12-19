@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "StarJedi.ttf";
+  src: url("../FontTest/Starjedi.ttf");
+}
+
+.SlideTopHead {
+  perspective: 800px; /* Ajustez la perspective selon vos besoins */
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .logoslide {
+  height: 45px;
+  width: 120px;
+  transition: 1s;
+} */
+
+/* .logoslide.left:hover {
+  animation: logoSpinLeft 2s linear infinite;
+}
+
+.logoslide.right:hover {
+  animation: logoSpinRight 2s linear infinite;
+}
+
+@keyframes logoSpinLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logoSpinRight {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+} */
+
+.slider {
+  width: 100%;
+  height: 400px;
+}
+
+.slide .slideimage {
+  width: 100%;
+  height: 550px;
+}
+
+.SlideHead {
+  border-radius: 75px;
+  padding: 15px;
+  user-select: none;
+  text-shadow: 2px 2px 1px black;
+  letter-spacing: 5px;
+  transform: rotateX(45deg);
+  color: #fad02c;
+  font-family: "StarJedi.ttf";
+  text-align: center;
+  font-size: 50px;
+}
+
+.slide {
+  position: relative;
+  filter: grayscale(100%) blur(4px);
+  opacity: 0.75;
+  transform: scale(0.7);
+  transition: 0.5s;
+}
+
+.slide-active {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.arrow {
+  z-index: 99;
+  font-size: 45px;
+  padding: 5px 15px;
+  display: flex;
+  position: absolute;
+  top: 250px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.arrow:hover {
+  animation: none;
+}
+
+@keyframes gigoter-left {
+  0%,
+  100% {
+    transform: translateX(10px); /* Ajustez la valeur selon vos besoins */
+  }
+  20% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes gigoter-right {
+  0%,
+  100% {
+    transform: translateX(-10px); /* Ajustez la valeur selon vos besoins */
+  }
+  20% {
+    transform: translateX(0);
+  }
+}
+
+.arrow-right {
+  animation: gigoter-right 1.5s infinite;
+  right: 20px;
+}
+
+.arrow-left {
+  animation: gigoter-left 1.5s infinite;
+  left: 20px;
+}
+
+.Statsslide {
+  font-size: 25px;
+  font-family: "StarJedi.ttf";
+  position: absolute;
+  bottom: 110px;
+}
+
+.nameslide {
+  color: white;
+  width: 300px;
+  position: absolute;
+  bottom: 70px;
+  left: 230px;
+}
+
+.atkslide {
+  left: 80px;
+  position: absolute;
+  color: #fad02c;
+}
+
+.defslide {
+  position: absolute;
+  left: 200px;
+  color: #32f0ea;
+  margin: 0;
+}
+
+.pvslide {
+  position: absolute;
+  left: 335px;
+  color: #e1525f;
+  margin: 0;
+}
+
+/* .buttonslide {
+  background-color: transparent;
+  border: none;
+  left: 459px;
+  top: 12px;
+  cursor: pointer;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+}
+
+.ModalDisplay {
+  position: relative;
+  left: 510px;
+  bottom: 450px;
+}
+
+.ModalImage {
+  width: 650px;
+} */
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+  .Statsslide {
+    font-size: 15px;
+    font-family: "StarJedi.ttf";
+    position: absolute;
+    bottom: 118px;
+  }
+
+  .nameslide {
+    color: white;
+    width: 300px;
+    position: absolute;
+    bottom: 70px;
+    left: 150px;
+  }
+
+  .atkslide {
+    left: 45px;
+    position: absolute;
+    color: #fad02c;
+  }
+
+  .defslide {
+    position: absolute;
+    left: 125px;
+    color: #32f0ea;
+    margin: 0;
+  }
+
+  .pvslide {
+    position: absolute;
+    left: 210px;
+    color: #e1525f;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .Statsslide {
+    font-size: 15px;
+    font-family: "StarJedi.ttf";
+    position: absolute;
+    bottom: 118px;
+  }
+
+  .nameslide {
+    color: white;
+    width: 300px;
+    position: absolute;
+    bottom: 70px;
+    left: 150px;
+  }
+
+  .atkslide {
+    left: 45px;
+    position: absolute;
+    color: #fad02c;
+  }
+
+  .defslide {
+    position: absolute;
+    left: 125px;
+    color: #32f0ea;
+    margin: 0;
+  }
+
+  .pvslide {
+    position: absolute;
+    left: 210px;
+    color: #e1525f;
+    margin: 0;
+  }
+}
