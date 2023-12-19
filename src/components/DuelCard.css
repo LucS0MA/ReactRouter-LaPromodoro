@@ -1,0 +1,24 @@
+
+
+.duel-card {
+    background-image: url("/src/assets/image/Design\ sans\ titre\ \(5\).png");
+    background-color: #f0f0f0; /* Fallback background color */
+    background-size: cover; /* Adjust as needed */
+
+}
+.TitleJeu{
+    margin-left: 12%;
+    color: white;
+    font-family: 'Starjedi';
+    font-size: 5em;
+    
+}
+
+.infosTexte{
+    color: white;
+    margin-left: 12%;
+    color: white;
+    font-family: 'Starjedi';
+    font-size: 1.5em;
+
+}
