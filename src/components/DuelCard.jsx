@@ -32,6 +32,7 @@ const DuelCard = () => {
         {cartes.map((carte) => (
           <CarteDuel
             key={carte.id}
+            name={carte.name}
             image={carte.image}
             atk={carte.atk}
             def={carte.def}
