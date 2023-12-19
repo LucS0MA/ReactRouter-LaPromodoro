@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
 import "../components/Carousel.css";
+import { useEffect } from "react";
 import Img1 from "../assets/img1.png";
 import Img2 from "../assets/img2.png";
 import Img3 from "../assets/img3.png";
@@ -66,6 +67,16 @@ function SamplePrevArrow({ onClick }) {
 
 const Carousel = () => {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [charactersInfos, setCharactersInfos] = useState([]);
+
+  useEffect(() => {
+    console.log("je suis dans le useEffect");
+    fetch(
+      "https://raw.githubusercontent.com/Miadil/starwars-api/master/api/cardGames.json"
+    )
+      .then((res) => res.json())
+      .then((data) => setCharactersInfos(data));
+  }, []);
 
   const settings = {
     infinite: true,
@@ -82,13 +93,18 @@ const Carousel = () => {
       <h2 className="SlideHead"> Characters Carousel </h2>
       <div className="slider">
         <Slider {...settings}>
-          {images.map((image, index) => (
+          {charactersInfos.map((characterInfo, index) => (
             <div
               className={index === slideIndex ? "slide slide-active" : "slide"}
               key={index}
             >
               <div>
-                <img src={image} alt="" />
+                <img src={characterInfo.image} alt="" />
+                {/* <div className="Stats">
+                  <p className="atk">{characterInfo.atk}</p>
+                  <p className="def">{characterInfo.def}</p>
+                  <p className="pv">{characterInfo.pv}</p>
+                </div> */}
               </div>
             </div>
           ))}
