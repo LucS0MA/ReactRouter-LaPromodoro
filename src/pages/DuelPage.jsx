@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import DuelResultModal from '../components/DuelResultModal';
 import "./DuelPage.css"
 
 const DuelPage = () => {
@@ -10,54 +11,71 @@ const DuelPage = () => {
   const [pvUtilisateur, setPvUtilisateur] = useState(selectedCard?.pv || 0);
   const [pvAdversaire, setPvAdversaire] = useState(adversaireCard?.pv || 0);
   const [coupsCritiques, setCoupsCritiques] = useState(0);
-  const [competenceSpecialeActive, setCompetenceSpecialeActive] = useState(false);
 
   const navigate = useNavigate();
+
+  const [modalVisible, setModalVisible] = useState(false);
+
+  const toggleModal = () => {
+    setModalVisible(!modalVisible);
+  };
 
   const attaqueAdversaire = () => {
     const attaquant = tourUtilisateur ? selectedCard : adversaireCard;
     const defenseur = tourUtilisateur ? adversaireCard : selectedCard;
+
+    let compteurUti = 0 ;
+    let compteurAd = 0 ;
 
   
     let degatsInfligesUtilisateur = Math.max(5, attaquant?.atk - defenseur?.def);
     let degatsInfligesDefenseur = Math.max(5, defenseur?.atk - attaquant?.def);
 
     const chanceCoupCritiqueUtilisateur = Math.random() <= 0.3;
-    const chanceCoupCritiqueAdversaire = Math.random() <= 0.3;
+    const chanceCoupCritiqueAdversaire = Math.random() <= 0.1;
 
     if (chanceCoupCritiqueUtilisateur) {
-      console.log("Coup crit")
-      degatsInfligesUtilisateur *= 2;
+       compteurUti++;
+       console.log("Coup critUtilisateur")
+
+    //   if(compteurUti === 3 ){
+    //     degatsInfligesUtilisateur *=6;
+    //   } else {
+    // }
+    degatsInfligesUtilisateur *= 2;
 
       setCoupsCritiques(prevCoupsCritiques => prevCoupsCritiques + 1);
     }
     if (chanceCoupCritiqueAdversaire) {
-      console.log("Coup crit")
-      degatsInfligesDefenseur *= 2;
+      console.log("Coup critAdversaire")
+      
+    //   compteurAd++;
+    //   if(compteurAd === 3 ){
+    //     degatsInfligesDefenseur *=6;
+    //   }else{
+    // }
+    degatsInfligesDefenseur *= 2;
     }
 
-    console.log("pv utilisateur: ", pvUtilisateur);
-    console.log("pv adversaire", pvAdversaire);
-
-    console.log("degatUti: ", degatsInfligesUtilisateur);
-    console.log("degat adversaire", degatsInfligesDefenseur);
 
    
     if (!tourUtilisateur) {
-      if (degatsInfligesUtilisateur > 0) {
-        setPvAdversaire(pvAdversaire - degatsInfligesUtilisateur);
+      if (degatsInfligesUtilisateur > 0 ) {
+        setPvAdversaire(pvAdversaire -  degatsInfligesUtilisateur);
       }
       if (degatsInfligesDefenseur > 0) {
         setPvUtilisateur(pvUtilisateur - degatsInfligesDefenseur);
       }
     } else {
-      if (degatsInfligesUtilisateur > 0) {
+      if (degatsInfligesUtilisateur > 0 )  {
         setPvAdversaire(pvAdversaire - degatsInfligesUtilisateur);
       }
       if (degatsInfligesDefenseur > 0) {
         setPvUtilisateur(pvUtilisateur - degatsInfligesDefenseur);
       }
     }
+    console.log("pvUti: ", pvUtilisateur);
+     console.log("pv adversaire", pvAdversaire);
 
  
     if (pvUtilisateur <= 0) {
@@ -75,10 +93,7 @@ const DuelPage = () => {
     if (selectedCard && adversaireCard) {
       attaqueAdversaire();
 
-      // Vérifier si la compétence spéciale doit être activée
-      if (coupsCritiques >= 3) {
-        setCompetenceSpecialeActive(true);
-      }
+      
 
       const cardImages = document.querySelectorAll('.cartes-container img');
       cardImages.forEach((img) => img.classList.add('collision'));
@@ -124,17 +139,6 @@ const DuelPage = () => {
     }
   };
 
-  const utiliserCompetenceSpeciale = () => {
-    // Logique de la compétence spéciale
-    if (competenceSpecialeActive) {
-      // Triple les dégâts ou ajoutez votre logique spécifique ici
-      console.log("Compétence spéciale activée !");
-      // Réinitialiser le nombre de coups critiques
-      setCoupsCritiques(0);
-      // Désactiver la compétence spéciale
-      setCompetenceSpecialeActive(false);
-    }
-  };
 
   useEffect(() => {
     if (!tourUtilisateur) {
@@ -146,6 +150,14 @@ const DuelPage = () => {
     }
   }, [tourUtilisateur, selectedCard, adversaireCard, pvUtilisateur, pvAdversaire, coupsCritiques]);
 
+  useEffect(() => {
+    if (pvUtilisateur <= 0 || pvAdversaire <= 0) {
+      setResultatDuel(pvUtilisateur <= 0 ? 'défaite' : 'victoire');
+      console.log('Résultat du duel :', resultatDuel);
+      toggleModal(); 
+    }
+  }, [pvUtilisateur, pvAdversaire]);
+
   return (
     <div className="duel-page">
       <div className="cartes-container">
@@ -156,7 +168,7 @@ const DuelPage = () => {
           <p className='pvDuel'>{selectedCard.pv}</p>
           <p><img src={selectedCard?.image} alt="Selected Card" /></p>
         </div>
-  
+        <div className="Vs"><img src = {'src/assets/image/Image-Vs.jpg'}/></div>
         
         <div key={adversaireCard?.id} className="adversaire-card">
           <p className='nameDuelOrdi'>{adversaireCard.name}</p>
@@ -173,17 +185,21 @@ const DuelPage = () => {
           <button className="star-wars-button" onClick={handleDuel} disabled={!tourUtilisateur}>
             Attaquer
           </button>
-  
-          <button className="star-wars-button" onClick={utiliserCompetenceSpeciale} disabled={!competenceSpecialeActive}>
+
+          {/* <button className="star-wars-button" onClick={utiliserCompetenceSpeciale} disabled={!competenceSpecialeActive}>
             Compétence Spéciale
-          </button>
+          </button> */}
         </>
       )}
   
       <button className="star-wars-button" onClick={() => navigate('/jeu')}>
         Retour à la sélection de personnage
       </button>
+      {modalVisible && (
+        <DuelResultModal result={resultatDuel}  onClose={() => navigate('/jeu')} />
+      )}
     </div>
+    
   );
    }
 
