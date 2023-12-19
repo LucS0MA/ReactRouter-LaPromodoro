@@ -1,4 +1,4 @@
 function Home() {
-  return <div>page Home Poulet</div>;
+  return <div></div>;
 }
 export default Home;
