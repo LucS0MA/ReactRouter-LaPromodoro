@@ -87,7 +87,9 @@ const Carousel = () => {
               className={index === slideIndex ? "slide slide-active" : "slide"}
               key={index}
             >
-              <img src={image} alt="" />
+              <div>
+                <img src={image} alt="" />
+              </div>
             </div>
           ))}
         </Slider>

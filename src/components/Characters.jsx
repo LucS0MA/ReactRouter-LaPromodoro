@@ -6,7 +6,9 @@ function Characters() {
 
   useEffect(() => {
     console.log("je suis dans le useEffect");
-    fetch("https://miadil.github.io/starwars-api/api/all.json")
+    fetch(
+      "https://raw.githubusercontent.com/Miadil/starwars-api/master/api/cardGames.json"
+    )
       .then((res) => res.json())
       .then((data) => setCharactersInfos(data));
   }, []);
