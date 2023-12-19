@@ -1,11 +1,13 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Carousel from "../components/Carousel";
+import Scene from "../components/Scene";
+
 import "./style/ComponentParallax.css";
 import { useRef } from "react";
 function ComponentParallax() {
   return (
     <div className="parallax" style={{ width: "100%", height: "100%" }}>
-      <Parallax id="scrollDown" pages={3}>
+      <Parallax id="scrollDown" pages={4}>
         <ParallaxLayer offset={0} speed={1}>
           <img
             src="/src/assets/parallax/espace.jpg"
@@ -64,8 +66,13 @@ function ComponentParallax() {
             className="premierplan"
           />
         </ParallaxLayer>
+
         <ParallaxLayer offset={1} speed={0}>
           <Carousel />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={2} speed={0}>
+          <Scene />
         </ParallaxLayer>
       </Parallax>
     </div>
