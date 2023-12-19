@@ -57,11 +57,23 @@ const Carousel = () => {
     // Responsive part of slick
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1325,
         settings: {
           slidesToShow: 1,
           infinite: true,
           dots: true,
+          centerMode: true,
+          centerPadding: "25%", // Ajoute cette ligne
+        },
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 1,
+          infinite: true,
+          dots: true,
+          centerMode: true,
+          centerPadding: "22%", // Ajoute cette ligne
         },
       },
       {
@@ -69,6 +81,8 @@ const Carousel = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "30%", // Ajoute cette ligne
         },
       },
       {
@@ -76,6 +90,8 @@ const Carousel = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "0%", // Ajoute cette ligne
         },
       },
     ],
