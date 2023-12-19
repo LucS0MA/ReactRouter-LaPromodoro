@@ -49,7 +49,7 @@
 }
 
 .slide .slideimage {
-  width: 100%;
+  width: 550px;
   height: 550px;
 }
 
@@ -75,7 +75,8 @@
 }
 
 .slide-active {
-  filter: blur(0);
+  z-index: 100;
+  filter: blur(0) grayscale(0);
   opacity: 1;
   transform: scale(1.03);
 }
@@ -148,14 +149,14 @@
 
 .defslide {
   position: absolute;
-  left: 200px;
+  left: 210px;
   color: #32f0ea;
   margin: 0;
 }
 
 .pvslide {
   position: absolute;
-  left: 335px;
+  left: 345px;
   color: #e1525f;
   margin: 0;
 }
@@ -182,7 +183,7 @@
   width: 650px;
 } */
 
-@media screen and (min-width: 100px) and (max-width: 700px) {
+/* @media screen and (min-width: 100px) and (max-width: 700px) {
   .Statsslide {
     font-size: 15px;
     font-family: "StarJedi.ttf";
@@ -254,4 +255,4 @@
     color: #e1525f;
     margin: 0;
   }
-}
+} */
