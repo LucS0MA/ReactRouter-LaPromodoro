@@ -9,11 +9,13 @@ const DuelCard = () => {
   const [cartes, setCartes] = useState([]);
   const [selectedCard, setSelectedCard] = useState(null);
   const [adversaireCard, setAdversaireCard] = useState(null);
+  const [fetchParam, setFetchParam] = useState("");
 
   useEffect(() => {
     fetch("https://miadil.github.io/starwars-api/api/cardGames.json")
       .then((res) => res.json())
       .then((data) => setCartes(data));
+      
   }, []);
 
 

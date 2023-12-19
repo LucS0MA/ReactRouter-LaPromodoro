@@ -16,6 +16,14 @@ const App = () => {
         <Route path="/jeu" element={<Jeu />} />
         <Route path="/duel" element={<DuelPage />} /> {/* Ajoutez cette ligne */}
       </Routes>
+      <Header/>
+      <Header/>
+      <Header/>
+      <Header/>
+      <Header/>
+      <Header/>
+      <Header/>
+      
     </div>
   );
 };
