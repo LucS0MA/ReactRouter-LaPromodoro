@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  height: 100%;
+  flex-grow: 1;
+  background-image: url("../assets/bcgSupport.png");
+  background-size: cover;
+}
+.formContainer {
+  padding-top: 10rem;
+  margin-bottom: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

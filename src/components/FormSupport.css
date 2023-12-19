@@ -1,0 +1,38 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  width: 30rem;
+  margin: 0rem auto;
+  line-height: 1.5rem;
+  font-family: "Chakra Petch", sans-serif;
+  padding: 0rem 2rem;
+  color: white;
+}
+.formUserName,
+.formUserEmail,
+.formUserMessage {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+input:placeholder-shown,
+textarea:placeholder-shown {
+  padding: 0.2rem;
+  color: silver;
+}
+.submitButton {
+  display: flex;
+  justify-content: end;
+}
+.submitButton input {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.submitButton input:hover {
+  background: rgb(0, 0, 0);
+  color: white;
+}

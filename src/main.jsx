@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import Jeu from "./pages/Jeu.jsx";
+import Support from "./pages/Support.jsx";
 
 import App from "./App.jsx";
 import "./index.css";
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/jeu",
         element: <Jeu />,
+      },
+      {
+        path: "/support",
+        element: <Support />,
       },
     ],
   },

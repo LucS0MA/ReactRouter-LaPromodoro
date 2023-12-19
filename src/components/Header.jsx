@@ -12,6 +12,9 @@ function Header() {
         <li>
           <Link to="/jeu ">Jeu</Link>
         </li>
+        <li>
+          <Link to="/support">Support</Link>
+        </li>
       </ul>
     </nav>
   );

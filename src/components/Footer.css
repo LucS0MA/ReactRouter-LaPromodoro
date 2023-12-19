@@ -4,7 +4,7 @@
   background-color: black;
   align-items: center;
   justify-content: space-between;
-  height: 3rem;
+  height: 3.5rem;
 }
 .footerText {
   display: flex;
@@ -31,6 +31,7 @@
 .collaborators li a {
   color: aliceblue;
   font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
 }
 .footerEnd {
   display: flex;

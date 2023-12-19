@@ -8,8 +8,9 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footerText">
-        <span>&copy;Promodoro </span>
-        <span> Star Wars </span> <img src={iconYoda} alt="Yoda picture" />
+        <span>&copy;Promodoro 2023 </span>
+        <span> Star Wars </span>{" "}
+        <img id="yodaFooter" src={iconYoda} alt="Yoda picture" />
       </div>
       <div className="collaboratorsList">
         <p>Contributeurs : </p>
