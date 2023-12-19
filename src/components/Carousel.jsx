@@ -117,6 +117,7 @@ const Carousel = () => {
           ))}
         </Slider>
       </div>
+      {/* Possible modale */}
       {/* {selectedImageIndex !== null && (
         <div className="ModalDisplay">
           <img
