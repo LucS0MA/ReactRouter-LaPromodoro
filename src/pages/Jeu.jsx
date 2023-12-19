@@ -1,10 +1,11 @@
-import Characters from "../components/Characters";
+
+import DuelCard from "../components/DuelCard";
+
 
 function Jeu() {
   return (
     <div>
-      <Characters />
-      {console.log("jeu")}
+      <DuelCard />
     </div>
   );
 }

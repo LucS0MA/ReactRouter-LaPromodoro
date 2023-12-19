@@ -1,6 +1,12 @@
-import Carousel from "../components/Carousel";
-
+import "./Home.css";
+import ComponentParallax from "../components/ComponentParallax";
 function Home() {
-  return <Carousel />;
+  return (
+    <>
+      <div>
+        <ComponentParallax />
+      </div>
+    </>
+  );
 }
 export default Home;
