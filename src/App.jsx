@@ -2,7 +2,6 @@ import { Link, Outlet } from "react-router-dom";
 
 import "./App.css";
 import Header from "./components/Header";
-import Carousel from "./components/Carousel";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
       <main>
         <Outlet />
       </main>
-      <Carousel />
     </>
   );
 }

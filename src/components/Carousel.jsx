@@ -90,7 +90,7 @@ const Carousel = () => {
   };
   return (
     <div className="container">
-      <h2 className="SlideHead"> Characters Carousel </h2>
+      <h2 className="SlideHead"> Cards Characters </h2>
       <div className="slider">
         <Slider {...settings}>
           {charactersInfos.map((characterInfo, index) => (
@@ -99,12 +99,13 @@ const Carousel = () => {
               key={index}
             >
               <div>
-                <img src={characterInfo.image} alt="" />
-                {/* <div className="Stats">
-                  <p className="atk">{characterInfo.atk}</p>
-                  <p className="def">{characterInfo.def}</p>
-                  <p className="pv">{characterInfo.pv}</p>
-                </div> */}
+                <img className="slideimage" src={characterInfo.image} alt="" />
+                <div className="Statsslide">
+                  <p className="nameslide">{characterInfo.name}</p>
+                  <p className="atkslide">{characterInfo.atk}</p>
+                  <p className="defslide">{characterInfo.def}</p>
+                  <p className="pvslide">{characterInfo.pv}</p>
+                </div>
               </div>
             </div>
           ))}

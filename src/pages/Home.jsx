@@ -1,4 +1,6 @@
+import Carousel from "../components/Carousel";
+
 function Home() {
-  return <div>page Home Poulet</div>;
+  return <Carousel />;
 }
 export default Home;
