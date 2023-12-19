@@ -1,10 +1,47 @@
-@mport "~slick-carousel/slick/slick.css";
-@mport "~slick-carousel/slick/slick-theme.css";
-
 @font-face {
   font-family: "StarJedi.ttf";
   src: url("../FontTest/Starjedi.ttf");
 }
+
+.SlideTopHead {
+  perspective: 800px; /* Ajustez la perspective selon vos besoins */
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .logoslide {
+  height: 45px;
+  width: 120px;
+  transition: 1s;
+} */
+
+/* .logoslide.left:hover {
+  animation: logoSpinLeft 2s linear infinite;
+}
+
+.logoslide.right:hover {
+  animation: logoSpinRight 2s linear infinite;
+}
+
+@keyframes logoSpinLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logoSpinRight {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+} */
 
 .slider {
   width: 100%;
@@ -17,10 +54,16 @@
 }
 
 .SlideHead {
+  border-radius: 75px;
+  padding: 15px;
+  user-select: none;
+  text-shadow: 2px 2px 1px black;
+  letter-spacing: 5px;
+  transform: rotateX(45deg);
+  color: #fad02c;
   font-family: "StarJedi.ttf";
-  margin: 50px auto;
   text-align: center;
-  font-size: 35px;
+  font-size: 50px;
 }
 
 .slide {
@@ -138,3 +181,77 @@
 .ModalImage {
   width: 650px;
 } */
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+  .Statsslide {
+    font-size: 15px;
+    font-family: "StarJedi.ttf";
+    position: absolute;
+    bottom: 118px;
+  }
+
+  .nameslide {
+    color: white;
+    width: 300px;
+    position: absolute;
+    bottom: 70px;
+    left: 150px;
+  }
+
+  .atkslide {
+    left: 45px;
+    position: absolute;
+    color: #fad02c;
+  }
+
+  .defslide {
+    position: absolute;
+    left: 125px;
+    color: #32f0ea;
+    margin: 0;
+  }
+
+  .pvslide {
+    position: absolute;
+    left: 210px;
+    color: #e1525f;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .Statsslide {
+    font-size: 15px;
+    font-family: "StarJedi.ttf";
+    position: absolute;
+    bottom: 118px;
+  }
+
+  .nameslide {
+    color: white;
+    width: 300px;
+    position: absolute;
+    bottom: 70px;
+    left: 150px;
+  }
+
+  .atkslide {
+    left: 45px;
+    position: absolute;
+    color: #fad02c;
+  }
+
+  .defslide {
+    position: absolute;
+    left: 125px;
+    color: #32f0ea;
+    margin: 0;
+  }
+
+  .pvslide {
+    position: absolute;
+    left: 210px;
+    color: #e1525f;
+    margin: 0;
+  }
+}
