@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
 import "../components/Carousel.css";
-import Img1 from "../assets/Img1.png";
+import Img1 from "../assets/img1.png";
 import Img2 from "../assets/img2.png";
 import Img3 from "../assets/img3.png";
 import Img4 from "../assets/img4.png";
@@ -51,7 +51,7 @@ const images = [
 function SampleNextArrow({ onClick }) {
   return (
     <div className="arrow arrow-right" onClick={onClick}>
-      <BsArrowRight />
+      <IoIosArrowForward />
     </div>
   );
 }
@@ -59,7 +59,7 @@ function SampleNextArrow({ onClick }) {
 function SamplePrevArrow({ onClick }) {
   return (
     <div className="arrow arrow-left" onClick={onClick}>
-      <BsArrowLeft />
+      <IoIosArrowBack />
     </div>
   );
 }

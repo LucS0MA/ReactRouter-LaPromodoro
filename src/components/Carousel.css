@@ -29,21 +29,45 @@
 
 .arrow {
   z-index: 99;
-  font-size: 30px;
+  font-size: 45px;
   padding: 5px 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 2px 1px;
   display: flex;
-  width: 15px;
   position: absolute;
-  top: 200px;
+  top: 150px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.arrow:hover {
+  animation: none;
+}
+
+@keyframes gigoter-left {
+  0%,
+  100% {
+    transform: translateX(10px); /* Ajustez la valeur selon vos besoins */
+  }
+  20% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes gigoter-right {
+  0%,
+  100% {
+    transform: translateX(-10px); /* Ajustez la valeur selon vos besoins */
+  }
+  20% {
+    transform: translateX(0);
+  }
 }
 
 .arrow-right {
+  animation: gigoter-right 1.5s infinite;
   right: 20px;
 }
 
 .arrow-left {
+  animation: gigoter-left 1.5s infinite;
   left: 20px;
 }
