@@ -18,7 +18,7 @@ const DuelPage = () => {
     const attaquant = tourUtilisateur ? selectedCard : adversaireCard;
     const defenseur = tourUtilisateur ? adversaireCard : selectedCard;
 
-    // Calcul des dégâts infligés par l'attaquant et le défenseur
+  
     let degatsInfligesUtilisateur = Math.max(5, attaquant?.atk - defenseur?.def);
     let degatsInfligesDefenseur = Math.max(5, defenseur?.atk - attaquant?.def);
 
@@ -28,7 +28,7 @@ const DuelPage = () => {
     if (chanceCoupCritiqueUtilisateur) {
       console.log("Coup crit")
       degatsInfligesUtilisateur *= 2;
-      // Incrémenter le nombre de coups critiques
+
       setCoupsCritiques(prevCoupsCritiques => prevCoupsCritiques + 1);
     }
     if (chanceCoupCritiqueAdversaire) {
@@ -42,7 +42,7 @@ const DuelPage = () => {
     console.log("degatUti: ", degatsInfligesUtilisateur);
     console.log("degat adversaire", degatsInfligesDefenseur);
 
-    // Mise à jour des points de vie en fonction du tour
+   
     if (!tourUtilisateur) {
       if (degatsInfligesUtilisateur > 0) {
         setPvAdversaire(pvAdversaire - degatsInfligesUtilisateur);
@@ -59,7 +59,7 @@ const DuelPage = () => {
       }
     }
 
-    // Vérification de la condition de victoire ou défaite
+ 
     if (pvUtilisateur <= 0) {
       setResultatDuel('défaite');
     } else if (pvAdversaire <= 0) {
@@ -68,7 +68,6 @@ const DuelPage = () => {
       setResultatDuel(null);
     }
 
-    // Passage au tour suivant
     setTourUtilisateur(true);
   };
 

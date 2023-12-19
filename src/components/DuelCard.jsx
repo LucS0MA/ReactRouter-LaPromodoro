@@ -23,7 +23,7 @@ const DuelCard = () => {
     const adversaireCard = cartes[adversaireIndex];
     setAdversaireCard(adversaireCard);
 
-    // Naviguer vers la page de duel avec les données
+ 
     navigate('/duel', { state: { selectedCard: carte, adversaireCard } });
   };
   return (
