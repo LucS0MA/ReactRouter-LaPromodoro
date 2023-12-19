@@ -1,0 +1,6 @@
+.duel-card {
+    background-image: url("src/assets/image/Alien_Space_Station_Interior_CD0011.jpg9A52093C-9F94-4E3C-BA99-809E46299A11Default.jpg");
+    background-color: #f0f0f0; /* Fallback background color */
+    background-size: cover; /* Adjust as needed */
+
+}
