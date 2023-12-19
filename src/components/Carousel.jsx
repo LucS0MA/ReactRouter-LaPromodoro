@@ -5,49 +5,6 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Slider from "react-slick";
 import "../components/Carousel.css";
 import { useEffect } from "react";
-import Img1 from "../assets/img1.png";
-import Img2 from "../assets/img2.png";
-import Img3 from "../assets/img3.png";
-import Img4 from "../assets/img4.png";
-import Img5 from "../assets/img5.png";
-import Img6 from "../assets/img6.png";
-import Img7 from "../assets/img7.png";
-import Img8 from "../assets/img8.png";
-import Img9 from "../assets/img9.png";
-import Img10 from "../assets/img10.png";
-import Img11 from "../assets/img11.png";
-import Img12 from "../assets/img12.png";
-import Img13 from "../assets/img13.png";
-import Img14 from "../assets/img14.png";
-import Img15 from "../assets/img15.png";
-import Img16 from "../assets/img16.png";
-import Img17 from "../assets/img17.png";
-import Img18 from "../assets/img18.png";
-import Img19 from "../assets/img19.png";
-import Img20 from "../assets/img20.png";
-
-const images = [
-  Img1,
-  Img2,
-  Img3,
-  Img4,
-  Img5,
-  Img6,
-  Img7,
-  Img8,
-  Img9,
-  Img10,
-  Img11,
-  Img12,
-  Img13,
-  Img14,
-  Img15,
-  Img16,
-  Img17,
-  Img18,
-  Img19,
-  Img20,
-];
 
 function SampleNextArrow({ onClick }) {
   return (
@@ -68,6 +25,7 @@ function SamplePrevArrow({ onClick }) {
 const Carousel = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [charactersInfos, setCharactersInfos] = useState([]);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
   useEffect(() => {
     console.log("je suis dans le useEffect");
@@ -86,8 +44,37 @@ const Carousel = () => {
     centerMode: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
     beforeChange: (current, next) => setSlideIndex(next),
   };
+
+  const handleButtonClick = (index) => {
+    setSelectedImageIndex(index);
+  };
+
   return (
     <div className="container">
       <h2 className="SlideHead"> Cards Characters </h2>
@@ -105,12 +92,26 @@ const Carousel = () => {
                   <p className="atkslide">{characterInfo.atk}</p>
                   <p className="defslide">{characterInfo.def}</p>
                   <p className="pvslide">{characterInfo.pv}</p>
+                  <button
+                    className="buttonslide"
+                    onClick={() => handleButtonClick(index)}
+                  ></button>
                 </div>
               </div>
             </div>
           ))}
         </Slider>
       </div>
+      {/* {selectedImageIndex !== null && (
+        <div className="ModalDisplay">
+          <img
+            className="ModalImage"
+            src={charactersInfos[selectedImageIndex].image}
+            alt=""
+          />
+          <button onClick={() => setSelectedImageIndex(null)}>Close</button>
+        </div>
+      )} */}
     </div>
   );
 };

@@ -1,3 +1,6 @@
+@mport "~slick-carousel/slick/slick.css";
+@mport "~slick-carousel/slick/slick-theme.css";
+
 @font-face {
   font-family: "StarJedi.ttf";
   src: url("../FontTest/Starjedi.ttf");
@@ -83,14 +86,14 @@
   font-size: 25px;
   font-family: "StarJedi.ttf";
   position: absolute;
-  bottom: 152px;
+  bottom: 110px;
 }
 
 .nameslide {
   color: white;
-  width: 250px;
+  width: 300px;
   position: absolute;
-  bottom: 30px;
+  bottom: 70px;
   left: 230px;
 }
 
@@ -113,3 +116,25 @@
   color: #e1525f;
   margin: 0;
 }
+
+/* .buttonslide {
+  background-color: transparent;
+  border: none;
+  left: 459px;
+  top: 12px;
+  cursor: pointer;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+}
+
+.ModalDisplay {
+  position: relative;
+  left: 510px;
+  bottom: 450px;
+}
+
+.ModalImage {
+  width: 650px;
+} */
