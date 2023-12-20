@@ -7,6 +7,7 @@
     --size: 3rem;
     position: relative;
     outline: 1px solid var(--clr-shadow__border);
+    border-radius: 30px;
   }
   
   .button {
@@ -19,6 +20,7 @@
     cursor: pointer;
     color: var(--clr-text);
     border:  0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);
+    font-family: "Chakra Petch", sans-serif;
   }
   
   .space {
@@ -37,6 +39,7 @@
   
   .box:hover .space {
     opacity: 0.8;
+    border-radius: 50px;
   }
   
   .star {

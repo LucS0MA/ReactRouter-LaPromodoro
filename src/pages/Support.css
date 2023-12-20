@@ -1,6 +1,6 @@
 .supportContainer {
   height: 100%;
-  background-image: url("../assets/bcgSupport.png");
+  background-image: url("/src/assets/image/Design\ sans\ titre\ \(7\).png");
   background-size: cover;
   display: flex;
   flex-direction: column;

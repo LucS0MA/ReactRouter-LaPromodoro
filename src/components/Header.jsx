@@ -12,7 +12,10 @@ function Header() {
     <nav className="navBar">
 
       <Link to="/"><img src={starFightsLogo} alt="StarFights logo" className="navBarLogo" /></Link>
+      <div className="buttonNav">
+      <Link to="/Support" className="navSupport">Support</Link>
       <Link to="/jeu "><Button>Jouer</Button></Link>
+      </div>
       
   
 

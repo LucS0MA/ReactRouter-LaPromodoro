@@ -40,5 +40,19 @@
   text-transform: uppercase;
   background: #f8f9f9;
   color: #1A1A1A;
-  box-shadow: 0 0 10px #f8f9f9;
+}
+
+.buttonNav{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.navSupport{
+  color: white;
+  font-size: 1.2em;
+  opacity: 0.5;
 }

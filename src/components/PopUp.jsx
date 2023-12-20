@@ -14,11 +14,11 @@ function PopUp({ onButtonClick }) {
       <div className="messagePopup">
         <p>May the force be with you ! </p>
       </div>
-      <div className="box">
-        <button className="button" onClick={handleClick}>
+      <div className="boxSub">
+        <button className="buttonSub" onClick={handleClick}>
           Ok !
         </button>
-        <div className="space">
+        <div className="spaceSub">
           <span className="star"></span>
           <span className="star"></span>
           <span className="star"></span>
