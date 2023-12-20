@@ -21,3 +21,14 @@ main {
   flex-direction: column;
   flex-grow: 1;
 }
+::-webkit-scrollbar {
+  width: 20px;
+  background: rgb(34, 34, 34);
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(8, 8, 8, 0.684);
+}
+::-webkit-scrollbar-thumb {
+  background: #131212;
+  border-radius: 10px;
+}
