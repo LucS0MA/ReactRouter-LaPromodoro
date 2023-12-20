@@ -2,6 +2,8 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Carousel from "../components/Carousel";
 import Scene from "../components/Scene";
 import Rules from "./Rules";
+import Intro from "./Intro";
+import Footer from "./Footer";
 
 import "./style/ComponentParallax.css";
 import { useRef } from "react";
@@ -70,15 +72,22 @@ function ComponentParallax() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0}>
-          <Carousel />
+          <Intro />
         </ParallaxLayer>
 
         <ParallaxLayer offset={2} speed={0}>
-          <Scene />
+          <Carousel />
         </ParallaxLayer>
 
         <ParallaxLayer offset={3} speed={0}>
+          <Scene />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={4} speed={0}>
           <Rules />
+        </ParallaxLayer>
+        <ParallaxLayer offset={5} speed={0}>
+          <Footer />
         </ParallaxLayer>
       </Parallax>
     </div>

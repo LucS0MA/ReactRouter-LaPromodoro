@@ -1,0 +1,52 @@
+.contactForm {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  line-height: 1.5rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.2rem;
+  padding: 0rem 2rem;
+  color: whitesmoke;
+}
+.formUserName,
+.formUserEmail,
+.formUserMessage {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+input,
+textarea {
+  padding: 0.3rem;
+  font-family: "Chakra Petch", sans-serif;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+input:placeholder-shown,
+textarea:placeholder-shown {
+  padding: 0.3rem;
+  color: silver;
+}
+.submitButton {
+  display: flex;
+  justify-content: end;
+}
+.submitButton input {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submitButton input:hover {
+  background: rgb(0, 0, 0);
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 1000px) {
+  .contactForm {
+    width: 50%;
+  }
+}
