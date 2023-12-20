@@ -168,7 +168,7 @@ const DuelPage = () => {
           <p className='pvDuel'>{selectedCard.pv}</p>
           <p><img src={selectedCard?.image} alt="Selected Card" /></p>
         </div>
-        <div className="Vs"><img src = {'src/assets/image/Image-Vs.jpg'}/></div>
+        <div className="Vs"><img src = {'src/assets/image/Image-Vs1.png'}/></div>
         
         <div key={adversaireCard?.id} className="adversaire-card">
           <p className='nameDuelOrdi'>{adversaireCard.name}</p>
@@ -182,9 +182,10 @@ const DuelPage = () => {
   
       {!resultatDuel && (
         <>
-          <button className="star-wars-button" onClick={handleDuel} disabled={!tourUtilisateur}>
-            Attaquer
+          <button className="shadow__btn" onClick={handleDuel} disabled={!tourUtilisateur}>
+            <span>Attaquer</span>
           </button>
+          
 
           {/* <button className="star-wars-button" onClick={utiliserCompetenceSpeciale} disabled={!competenceSpecialeActive}>
             Compétence Spéciale
@@ -192,11 +193,11 @@ const DuelPage = () => {
         </>
       )}
   
-      <button className="star-wars-button" onClick={() => navigate('/jeu')}>
+      <button className="shadow__btn" onClick={() => navigate('/jeu')}>
         Retour à la sélection de personnage
       </button>
       {modalVisible && (
-        <DuelResultModal result={resultatDuel}  onClose={() => navigate('/jeu')} />
+        <DuelResultModal className="shadow__btn" result={resultatDuel}  onClose={() => navigate('/jeu')} />
       )}
     </div>
     

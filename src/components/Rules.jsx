@@ -3,8 +3,8 @@ import "./Rules.css";
 
 function Rules() {
     return <div className="rulesSection">
-        <h1>Rules for new players</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde provident ea laboriosam ipsa quo assumenda sunt corrupti nemo consequuntur perferendis vel porro quidem quas illo accusamus rem qui iste, earum necessitatibus magnam. Deleniti optio iste sit nisi cupiditate in iure, doloremque qui amet odio ipsam, placeat similique quas quam eius veniam. Numquam officia explicabo illum deserunt dolor assumenda non mollitia fugiat nam vel sit minima debitis harum nulla aliquid voluptate, natus necessitatibus dolore. Labore, reprehenderit.
+        <h1>Règles du jeu</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus id inventore nisi assumenda ipsam modi veritatis quisquam. Quasi quae ullam, illo architecto est beatae nulla amet doloremque nisi? Aspernatur labore architecto recusandae ut, blanditiis aliquid vel provident itaque aperiam illo!
         </p>
         <Link to="/jeu">
             <button className="rulesButton">

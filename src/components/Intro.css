@@ -7,13 +7,14 @@
 }
 .imageIntroContainer {
   width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .introPicture {
-  width: 40rem;
+  width: 50rem;
   height: 50%;
   object-fit: cover;
 }
@@ -36,7 +37,16 @@
   font-size: 1.3rem;
   font-family: "Chakra Petch", sans-serif;
 }
-.infoIntroContainer p {
+
+.infoIntroContainer h1 {
+  margin-bottom: 3%;
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: #fad02c;
+  font-family: 'Starjedi';
+}
+
+/* .infoIntroContainer p {
   margin: 4rem 0;
   text-align: justify;
   columns: 2;
@@ -44,4 +54,10 @@
   color: white;
   font-size: 1.1rem;
   font-family: "Chakra Petch", sans-serif;
+} */
+
+.infoIntroContainer p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  width: 90%;
 }

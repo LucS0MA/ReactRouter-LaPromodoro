@@ -4,7 +4,6 @@ import Scene from "../components/Scene";
 import Rules from "./Rules";
 import Intro from "./Intro";
 import Footer from "./Footer";
-
 import "./style/ComponentParallax.css";
 import { useRef } from "react";
 

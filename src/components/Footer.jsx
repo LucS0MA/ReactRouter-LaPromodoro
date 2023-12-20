@@ -16,22 +16,22 @@ function Footer() {
         <p>Contributeurs : </p>
         <ul className="collaborators">
           <li>
-            <a href="https://github.com/maevafauvel">Maeva</a>
+            <a href="https://github.com/maevafauvel" target="Blank" >Maeva</a>
           </li>
           <li>
-            <a href="https://github.com/Gwenaelbegot">Gwenaël</a>
+            <a href="https://github.com/Gwenaelbegot" target="Blank">Gwenaël</a>
           </li>
           <li>
-            <a href="https://github.com/Gatsuweb">Ivan</a>
+            <a href="https://github.com/Gatsuweb" target="Blank">Ivan</a>
           </li>
           <li>
-            <a href="https://github.com/HamIIdou">Hamidou</a>
+            <a href="https://github.com/HamIIdou" target="Blank" >Hamidou</a>
           </li>
           <li>
-            <a href="https://github.com/LucS0MA">Lucien</a>
+            <a href="https://github.com/LucS0MA" target="Blank">Lucien</a>
           </li>
           <li>
-            <a href="https://github.com/codeIsHard2023">Vlad</a>
+            <a href="https://github.com/codeIsHard2023" target="Blank">Vlad</a>
           </li>
         </ul>
       </div>
