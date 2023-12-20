@@ -48,6 +48,7 @@ const Carousel = () => {
   const settings = {
     infinite: true,
     // dots: true,
+    focusOnSelect: true,
     speed: 500,
     slidesToShow: 3,
     centerMode: true,
@@ -57,13 +58,23 @@ const Carousel = () => {
     // Responsive part of slick
     responsive: [
       {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 3,
+          infinite: true,
+          dots: true,
+          centerMode: true,
+          centerPadding: "0%",
+        },
+      },
+      {
         breakpoint: 1325,
         settings: {
           slidesToShow: 1,
           infinite: true,
           dots: true,
           centerMode: true,
-          centerPadding: "25%", // Ajoute cette ligne
+          centerPadding: "25%",
         },
       },
       {
@@ -73,7 +84,7 @@ const Carousel = () => {
           infinite: true,
           dots: true,
           centerMode: true,
-          centerPadding: "22%", // Ajoute cette ligne
+          centerPadding: "22%",
         },
       },
       {
@@ -82,7 +93,7 @@ const Carousel = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: "30%", // Ajoute cette ligne
+          centerPadding: "30%",
         },
       },
       {
@@ -91,7 +102,7 @@ const Carousel = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: "0%", // Ajoute cette ligne
+          centerPadding: "0%",
         },
       },
     ],
@@ -106,7 +117,7 @@ const Carousel = () => {
     <div className="container">
       <div className="SlideTopHead">
         {/* <img src={laser1} alt="" className="logoslide left" /> */}
-        <h2 className="SlideHead"> playable characters </h2>
+        <h2 className="SlideHead"> personnages jouables </h2>
         {/* <img src={laser} alt="" className="logoslide right" /> */}
       </div>
       <div className="slider">

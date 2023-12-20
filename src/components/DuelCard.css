@@ -1,8 +1,7 @@
 
 
 .duel-card {
-    background-image: url("/src/assets/image/Design\ sans\ titre\ \(5\).png");
-    background-color: #f0f0f0; /* Fallback background color */
+    background-image: url("/src/assets/image/BackgroundStar.png");
     background-size: cover; /* Adjust as needed */
 
 }

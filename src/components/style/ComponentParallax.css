@@ -76,4 +76,15 @@
     position: fixed;
     top: 40%;
   }
+
+  .sectionCarousel {
+    height: 100vh;
+  }
   
+  .section3D {
+    padding: 10rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }

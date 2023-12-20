@@ -1,27 +1,44 @@
 .navBar {
-  background-color: #1A1A1A;
+  background-color: #0b0b0b;
   display: flex;
   justify-content: space-between;
   padding: 0 5rem 0 2rem;
   align-items: center;
-  color: white;
 }
 
 .navBarLogo {
   width: 150px;
 }
 
-.navBarButton {
-  padding: 0.7rem 3rem;
-  background-color: inherit;
-  border-style: solid;
-  border-color: #45b76d;
-  border-radius: 50px;
-  color: #45b76d;
+.navBarButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
-.navBarButton:hover {
-  background-color: #45b76d;
+.navBarButtonSupport {
+  padding: 1rem 3.4rem;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: #f8f9f9;
+  border-width: 0.1rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  background: inherit;
+  color: #f8f9f9;
+}
+
+.navBarButton {
+  padding: 1rem 4rem;
+  border-style: solid;
+  border-radius: 70px;
+  border-width: 0.1rem;
+  border-color: #f8f9f9;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  background: #f8f9f9;
   color: #1A1A1A;
 }
 
