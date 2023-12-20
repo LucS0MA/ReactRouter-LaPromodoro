@@ -48,7 +48,7 @@
   color: whitesmoke;
 } */
 
-.box {
+.boxSub {
   /* --clr-shadow__border: #d9a1ff;
   --clr-text: #f6f4eb;
   --clr-space: #120e1e;
@@ -59,7 +59,7 @@
   outline: 1px solid var(--clr-shadow__border);
 }
 
-.button {
+.buttonSub {
   font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
@@ -72,7 +72,7 @@
     0px -2px var(--clr-shadow__border);
 }
 
-.space {
+.spaceSub {
   width: 100%;
   height: 100%;
   bottom: 0%;
@@ -86,11 +86,11 @@
   background: linear-gradient(160deg, var(--clr-space), var(--clr-space-gr));
 }
 
-.box:hover .space {
+.boxSub:hover .spaceSub {
   opacity: 1;
 }
 
-.star {
+.starSub {
   height: 4rem;
   width: 2rem;
   transition: 0.5s;
