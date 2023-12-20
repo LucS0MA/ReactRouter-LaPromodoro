@@ -18,7 +18,7 @@
     border: none;
     cursor: pointer;
     color: var(--clr-text);
-    -2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);
+    border:  0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);
   }
   
   .space {
