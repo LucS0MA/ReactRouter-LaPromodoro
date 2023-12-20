@@ -7,7 +7,15 @@ function Header() {
   return (
     <nav className="navBar">
       <Link to="/"><img src={starFightsLogo} alt="StarFights logo" className="navBarLogo" /></Link>
-      <Link to="/jeu "><button className="navBarButton">Jouer</button></Link>
+      <Link to="/jeu ">
+        <button className="button">
+          Jouer
+          <span className="top"></span>
+          <span className="left"></span>
+          <span className="bottom"></span>
+          <span className="right"></span>
+        </button>
+      </Link>
     </nav>
   );
 }

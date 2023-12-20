@@ -90,7 +90,7 @@ const Carousel = () => {
     <div className="container">
       <div className="SlideTopHead">
         {/* <img src={laser1} alt="" className="logoslide left" /> */}
-        <h2 className="SlideHead"> playable characters </h2>
+        <h1 className="SlideHead"> playable characters </h1>
         {/* <img src={laser} alt="" className="logoslide right" /> */}
       </div>
       <div className="slider">

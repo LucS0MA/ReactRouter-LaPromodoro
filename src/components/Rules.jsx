@@ -3,8 +3,8 @@ import "./Rules.css";
 
 function Rules() {
     return <div className="rulesSection">
-        <h1>Bienvenue jeune padawan</h1>
-        <p>Prêt à jouer tu crois être? Pour cela, d'abord lire les règles du jeu tu devras. Pour commencer, le choix de ton personnage tu auras. Lorsqu'une carte, sélectionnée sera, le duel pour sûr commencera. Ta victoire dépendra des statistiques de ta carte et celle de ton adversaire. Faire preuve de sagesse lors de ton choix, tu feras. Maintenant que tu as pris connaissance du déroulement d'une partie, l'accès au jeu, permis te seras. Que la force soit avec toi.
+        <h1>Rules for new players</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde provident ea laboriosam ipsa quo assumenda sunt corrupti nemo consequuntur perferendis vel porro quidem quas illo accusamus rem qui iste, earum necessitatibus magnam. Deleniti optio iste sit nisi cupiditate in iure, doloremque qui amet odio ipsam, placeat similique quas quam eius veniam. Numquam officia explicabo illum deserunt dolor assumenda non mollitia fugiat nam vel sit minima debitis harum nulla aliquid voluptate, natus necessitatibus dolore. Labore, reprehenderit.
         </p>
         <Link to="/jeu">
             <button className="rulesButton">
