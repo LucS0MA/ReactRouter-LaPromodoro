@@ -7,6 +7,7 @@ import Support from "./pages/Support.jsx";
 
 import App from "./App.jsx";
 import "./index.css";
+import DuelPage from "./pages/DuelPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/jeu",
         element: <Jeu />,
+      },
+      {
+        path: "/duel",
+        element: <DuelPage />,
       },
       {
         path: "/support",

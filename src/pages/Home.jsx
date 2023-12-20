@@ -1,11 +1,12 @@
-import Intro from "../components/Intro";
-import Footer from "../components/Footer";
+import "./Home.css";
+import ComponentParallax from "../components/ComponentParallax";
 function Home() {
   return (
-    <div>
-      <Intro />
-      {/* <Footer /> */}
-    </div>
+    <>
+      <div>
+        <ComponentParallax />
+      </div>
+    </>
   );
 }
 export default Home;

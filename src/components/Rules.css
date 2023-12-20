@@ -1,0 +1,27 @@
+.rulesSection {
+    padding: 2rem;
+    width: 50%;
+}
+
+.rulesSection h1 {
+    margin-bottom: 2rem;
+}
+
+.rulesSection p {
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.rulesButton {
+    padding: 0.7rem 3rem;
+    background-color: inherit;
+    border-style: solid;
+    border-color: #45b76d;
+    border-radius: 50px;
+    color: #45b76d;
+}
+  
+.rulesButton:hover {
+    background-color: #45b76d;
+    color: #1A1A1A;
+}

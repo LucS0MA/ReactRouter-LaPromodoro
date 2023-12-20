@@ -12,7 +12,7 @@ function Intro() {
         />
       </div>
       <div className="infoIntroContainer">
-        <h1 className="introHead">Star Wars</h1>
+        <h1 className="introHead">Star Fights</h1>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
