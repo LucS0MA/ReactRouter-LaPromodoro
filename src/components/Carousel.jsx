@@ -47,7 +47,7 @@ const Carousel = () => {
 
   const settings = {
     infinite: true,
-    dots: true,
+    // dots: true,
     speed: 500,
     slidesToShow: 3,
     centerMode: true,
