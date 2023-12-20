@@ -1,5 +1,5 @@
 import "./Intro.css";
-import pictureDraft from "../assets/pictureDraft.png";
+import laptop from "../assets/laptop.png";
 
 function Intro() {
   return (
@@ -7,18 +7,16 @@ function Intro() {
       <div className="imageIntroContainer">
         <img
           className="introPicture"
-          src={pictureDraft}
+          src={laptop}
           alt="gameplay screenshot"
         />
       </div>
       <div className="infoIntroContainer">
         <h1 className="introHead">Star Fights</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Bienvenue jeune Padawan !</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit.
+          Tu souhaites rejoindre l'ordre des Jedis ? Affronte les meilleurs Jedis de ta saga préféré dans un duel de carte acharné. 
+          <p>Encore là ? Clique sur le bouton Jouer en haut à droite de ton écran.</p>
         </p>
       </div>
     </section>
