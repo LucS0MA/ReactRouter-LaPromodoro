@@ -70,24 +70,29 @@ function ComponentParallax() {
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0}>
-          <Intro />
+        <ParallaxLayer offset={0.9} speed={0}>
+          <div>
+            <Intro />
+          </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={0}>
-          <Carousel />
+        <ParallaxLayer offset={1.7} speed={0}>
+          <div className="sectionCarousel">
+            <Carousel />
+          </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} speed={0}>
-          <Scene />
+        <ParallaxLayer offset={2.7} speed={0}>
+          <div className="section3D">
+            <Scene />
+            <Rules />
+          </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4} speed={0}>
-          <Rules />
-        </ParallaxLayer>
-        <ParallaxLayer offset={5} speed={0}>
+        <ParallaxLayer offset={3.91} speed={0}>
           <Footer />
         </ParallaxLayer>
+
       </Parallax>
     </div>
   );

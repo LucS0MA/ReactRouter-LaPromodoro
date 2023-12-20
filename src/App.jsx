@@ -6,7 +6,6 @@ import Jeu from "./pages/Jeu.jsx";
 import DuelPage from "./pages/DuelPage.jsx"; // Importez votre composant Duel ici
 import Header from "./components/Header.jsx";
 import "./App.css";
-import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
       <main>
         <Outlet />
       </main>
-      <Footer />
     </>
   );
 };
