@@ -1,7 +1,8 @@
 .duel-page {
-    background-image: url("/src/assets/image/Design\ sans\ titre\ \(6\).png");
+    background-image: url("/src/assets/image/Design\ sans\ titre\ \(7\).png");
     background-color: #f0f0f0; /* Fallback background color */
     background-size: cover; /* Adjust as needed */
+    min-height: 80vh;
 
 }
 @font-face {
@@ -117,22 +118,39 @@ position: relative;
 }
 /* Fin stats carte */
 
-.star-wars-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 2px solid #ffe81f; /* Jaune lightsaber */
-    color: #ffe81f; /* Jaune lightsaber */
-    background-color: #000; /* Fond noir */
-    border-radius: 40px;
-  
-    /* Ajouter une transition pour une animation fluide */
-    transition: background-color 0.3s, color 0.3s;
-  }
+
+
+
+.shadow__btn {
+  max-height: 50px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+  position: relative;
+}
+
+
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(255, 7, 58),
+              0 0 25px rgb(255, 7, 58),
+              0 0 50px rgb(255, 7, 58),
+              0 0 100px rgb(255, 7, 58);
+  background-color: rgba(255, 7, 58);
+}
+
+
+
+
 
 
  

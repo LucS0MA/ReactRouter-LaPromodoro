@@ -33,7 +33,7 @@ const DuelCard = () => {
     <div className="duel-card">
       <h1 class="TitleJeu">star fights:</h1>
       <p className='infosTexte'>Bienvenue, dans le jeu <span className='spanColor'>"Star Fights".</span></p>
-      <p className='infosTexte'> Pour comment à <span className='spanColor'>jouer</span>, <span className='spanColor'>clique</span> sur ton <span className='spanColor'>personnage</span> !</p>
+      <p className='infosTexte'> Pour commencer à <span className='spanColor'>jouer</span>, <span className='spanColor'>clique</span> sur ton <span className='spanColor'>personnage</span> !</p>
       <div className="cartes-container">
         {cartes.map((carte) => (
           <CarteDuel
