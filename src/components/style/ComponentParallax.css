@@ -78,12 +78,10 @@
   }
 
   .sectionCarousel {
-    background-color: rgb(204, 204, 204);
     height: 100vh;
   }
   
   .section3D {
-    background-color: #1A1A1A;
     padding: 10rem 2rem;
     display: flex;
     flex-direction: row;

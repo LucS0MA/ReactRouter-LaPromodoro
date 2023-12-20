@@ -10,7 +10,6 @@
   justify-content: center;
 }
 
-
 /* .logoslide {
   height: 45px;
   width: 120px;
@@ -46,17 +45,17 @@
 .slider {
   width: 100%;
   height: 400px;
+  margin: 0 auto;
 }
 
 .slide .slideimage {
-  width: 550px;
-  height: 550px;
-
+  width: 565px;
+  height: 575px;
 }
 
 .SlideHead {
   letter-spacing: 0.2rem;
-  color: #1A1A1A;
+  color: #FFFFFF;
   font-family: "StarJedi.ttf";
   text-align: center;
 }
@@ -84,7 +83,7 @@
   top: 250px;
   cursor: pointer;
   transition: 0.5s;
-  color: #1A1A1A;
+  color: #ffffff;
 }
 
 .arrow:hover {
@@ -125,33 +124,33 @@
   font-size: 25px;
   font-family: "StarJedi.ttf";
   position: absolute;
-  bottom: 110px;
+  bottom: 115px;
 }
 
 .nameslide {
   color: white;
   width: 300px;
   position: absolute;
-  bottom: 70px;
-  left: 230px;
+  bottom: 75px;
+  left: 240px;
 }
 
 .atkslide {
-  left: 80px;
+  left: 85px;
   position: absolute;
   color: #fad02c;
 }
 
 .defslide {
   position: absolute;
-  left: 210px;
+  left: 215px;
   color: #32f0ea;
   margin: 0;
 }
 
 .pvslide {
   position: absolute;
-  left: 345px;
+  left: 355px;
   color: #e1525f;
   margin: 0;
 }
