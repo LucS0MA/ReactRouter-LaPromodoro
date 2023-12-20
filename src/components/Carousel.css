@@ -4,8 +4,9 @@
 }
 
 .SlideTopHead {
-  padding: 10rem 0 0 0;
+  perspective: 800px;
   display: flex;
+  margin-top: 50px;
   align-items: center;
   justify-content: center;
 }
@@ -54,10 +55,16 @@
 }
 
 .SlideHead {
-  letter-spacing: 0.2rem;
-  color: #FFFFFF;
+  border-radius: 75px;
+  padding: 15px;
+  user-select: none;
+  text-shadow: 2px 2px 1px black;
+  letter-spacing: 5px;
+  transform: rotateX(45deg);
+  color: #fad02c;
   font-family: "StarJedi.ttf";
   text-align: center;
+  font-size: 50px;
 }
 
 .slide {
@@ -83,7 +90,7 @@
   top: 250px;
   cursor: pointer;
   transition: 0.5s;
-  color: #ffffff;
+  color: #fad02c;
 }
 
 .arrow:hover {

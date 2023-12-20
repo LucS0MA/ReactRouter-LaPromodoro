@@ -58,6 +58,16 @@ const Carousel = () => {
     // Responsive part of slick
     responsive: [
       {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 3,
+          infinite: true,
+          dots: true,
+          centerMode: true,
+          centerPadding: "0%",
+        },
+      },
+      {
         breakpoint: 1325,
         settings: {
           slidesToShow: 1,
