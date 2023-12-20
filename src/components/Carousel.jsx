@@ -48,6 +48,7 @@ const Carousel = () => {
   const settings = {
     infinite: true,
     // dots: true,
+    focusOnSelect: true,
     speed: 500,
     slidesToShow: 3,
     centerMode: true,
