@@ -5,7 +5,14 @@ import Rules from "./Rules";
 import Intro from "./Intro";
 import Footer from "./Footer";
 import "./style/ComponentParallax.css";
-import { useRef } from "react";
+
+import Espace from "../assets/parallax/espace.jpg"
+import Planete2 from "../assets/parallax/planete2.png"
+import Plan3 from "../assets/parallax/parallax-arriere-plan3.png"
+import PlanetePng from "../assets/parallax/planetepng.png"
+import Plan2 from "../assets/parallax/parallax-deuxieme-plan.png"
+import Morceau from "../assets/parallax/morceaumontagne.png"
+import Plan1 from "../assets/parallax/parallax-premier-plan.png"
 
 function ComponentParallax() {
   return (
@@ -13,7 +20,7 @@ function ComponentParallax() {
       <Parallax id="scrollDown" pages={4}>
         <ParallaxLayer offset={0} speed={1}>
           <img
-            src="/src/assets/parallax/espace.jpg"
+            src={Espace}
             alt="espace"
             className="fondnoir"
           />
@@ -21,7 +28,7 @@ function ComponentParallax() {
 
         <ParallaxLayer offset={0.5} speed={1.3}>
           <img
-            src="/src/assets/parallax/planete2.png"
+            src={Planete2}
             alt="petite-planete"
             className="petiteplanete"
           />
@@ -29,7 +36,7 @@ function ComponentParallax() {
 
         <ParallaxLayer offset={0} speed={1.2}>
           <img
-            src="/src/assets/parallax/parallax-arriere-plan3.png"
+            src={Plan3}
             alt="background-espace"
             className="backgroundspace"
           />
@@ -37,7 +44,7 @@ function ComponentParallax() {
 
         <ParallaxLayer offset={0} speed={3}>
           <img
-            src="/src/assets/parallax/planetepng.png"
+            src={PlanetePng}
             alt="planete"
             className="planete"
           />
@@ -49,7 +56,7 @@ function ComponentParallax() {
 
         <ParallaxLayer offset={0} speed={1.4}>
           <img
-            src="/src/assets/parallax/parallax-deuxieme-plan.png"
+            src={Plan2}
             alt="background-espace"
             className="deuxiemeplan"
           />
@@ -57,14 +64,14 @@ function ComponentParallax() {
 
         <ParallaxLayer offset={0} speed={0.9}>
           <img
-            src="/src/assets/parallax/morceaumontagne.png"
+            src={Morceau}
             className="ajoutpremierplan"
           />
         </ParallaxLayer>
 
         <ParallaxLayer offset={0} speed={0.9}>
           <img
-            src="/src/assets/parallax/parallax-premier-plan.png"
+            src={Plan1}
             alt="background-espace"
             className="premierplan"
           />
