@@ -52,7 +52,6 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 3,
     centerMode: true,
-    centerMode: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     // Responsive part of slick
