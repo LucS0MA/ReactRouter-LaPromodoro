@@ -1,0 +1,30 @@
+
+
+.duel-card {
+    background-image: url("/src/assets/image/BackgroundStar.png");
+    background-size: cover; /* Adjust as needed */
+
+}
+.spanColor{
+    color: #FAD02C;
+}
+.TitleJeu{
+    margin-left: 12%;
+    color: white;
+    font-family: 'Starjedi';
+    font-size: 5em;
+    
+}
+
+.infosTexte{
+    color: white;
+    margin-left: 12%;
+    color: white;
+    font-family: 'Starjedi';
+    font-size: 1.5em;
+
+}
+
+img {
+    cursor: pointer;
+}

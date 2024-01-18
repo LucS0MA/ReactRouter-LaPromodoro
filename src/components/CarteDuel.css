@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Starjedi";
+  src: url("../Fonts/Starjedi.ttf") format("truetype");
+}
+.cartes-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+/* .carte-person {
+  position: relative;
+} */
+
+/*Start : Code animation Vlad derrière cartes*/
+.glow {
+  width: 510px;
+  height: 510px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carte-person {
+  position: absolute;
+}
+.carte-person {
+  height: 500px;
+  width: 500px;
+  cursor: pointer;
+  border-radius: 15px;
+  padding-bottom: 30px;
+}
+
+.carte-person:hover {
+  height: 440px;
+  width: 500px;
+  backdrop-filter: blur(10px);
+  /* filter: blur(10px); */
+
+  opacity: 0.9;
+  background: linear-gradient(
+    45deg,
+    #e6fb04,
+    #ff6600,
+    #00ffff,
+    #ff00ff,
+    #ff0099,
+    #6e0dd0,
+    #ff3300,
+    #099fff
+  );
+  background-size: 300%;
+  animation: animate 30s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 300% 0;
+  }
+  50% {
+    background-position: 600% 0;
+  }
+  75% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/*End : Code animation Vlad derrière cartes*/
+
+.name {
+  position: absolute;
+  top: 299px;
+  left: 220px;
+  color: white;
+  font-size: 1.5em;
+  font-family: "Starjedi";
+}
+.atk {
+  position: absolute;
+  top: 358px;
+  left: 80px;
+  color: white;
+  font-size: 1.7em;
+  font-family: "Starjedi";
+  color: #fad02c;
+}
+.def {
+  position: absolute;
+  top: 358px;
+  left: 195px;
+  color: white;
+  font-size: 1.7em;
+  font-family: "Starjedi";
+  color: #32f0ea;
+}
+.pv {
+  position: absolute;
+  top: 358px;
+  left: 320px;
+  color: white;
+  font-size: 1.7em;
+  font-family: "Starjedi";
+  color: #e1525f;
+}
+
+.Dcard-Global img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}

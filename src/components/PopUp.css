@@ -1,0 +1,132 @@
+.popupShow {
+  --clr-shadow__border: #d9a1ff;
+  --clr-text: #f6f4eb;
+  --clr-space: #120e1e;
+  --clr-space-gr: #271950;
+  --clr-star: #e9f8f9;
+  --size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 0rem auto;
+  line-height: 2rem;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.5rem;
+  padding: 0rem 2rem;
+  /* color: whitesmoke; */
+}
+.imagePopup img {
+  height: 120px;
+  width: 120px;
+}
+.messagePopup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+.messagePopup p {
+  text-shadow: 2px 0px var(--clr-shadow__border),
+    0px 2px var(--clr-shadow__border), -2px 0px var(--clr-shadow__border),
+    0px -2px var(--clr-shadow__border);
+}
+/* .messagePopup button {
+  width: 4rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-family: "Chakra Petch", sans-serif;
+} */
+/* .messagePopup button:hover {
+  background: rgb(0, 0, 0);
+  color: whitesmoke;
+} */
+
+.boxSub {
+  /* --clr-shadow__border: #d9a1ff;
+  --clr-text: #f6f4eb;
+  --clr-space: #120e1e;
+  --clr-space-gr: #271950;
+  --clr-star: #e9f8f9;
+  --size: 3rem; */
+  position: relative;
+  outline: 1px solid var(--clr-shadow__border);
+}
+
+.buttonSub {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  background: transparent;
+  padding: calc(var(--size) / 4) var(--size);
+  border: none;
+  cursor: pointer;
+  text-shadow: 2px 0px var(--clr-shadow__border),
+    0px 2px var(--clr-shadow__border), -2px 0px var(--clr-shadow__border),
+    0px -2px var(--clr-shadow__border);
+}
+
+.spaceSub {
+  width: 100%;
+  height: 100%;
+  bottom: 0%;
+  gap: 1.5rem;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  background: linear-gradient(160deg, var(--clr-space), var(--clr-space-gr));
+}
+
+.boxSub:hover .spaceSub {
+  opacity: 1;
+}
+
+.starSub {
+  height: 4rem;
+  width: 2rem;
+  transition: 0.5s;
+  border-radius: 50px;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  position: relative;
+  background-color: var(--clr-star);
+  animation: space-animation calc(0.1s * var(--i)) linear infinite;
+}
+.space span:nth-last-child(1) {
+  --i: 31;
+}
+.space span:nth-last-child(2) {
+  --i: 12;
+}
+.space span:nth-last-child(3) {
+  --i: 57;
+}
+.space span:nth-last-child(4) {
+  --i: 93;
+}
+.space span:nth-last-child(5) {
+  --i: 23;
+}
+.space span:nth-last-child(6) {
+  --i: 70;
+}
+.space span:nth-last-child(7) {
+  --i: 6;
+}
+@keyframes space-animation {
+  0% {
+    transform: rotate(-30deg) translateY(calc(-52% * var(--i)));
+  }
+
+  100% {
+    transform: rotate(-30deg) translateY(calc(52% * var(--i)));
+  }
+}

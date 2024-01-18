@@ -1,0 +1,90 @@
+
+
+@font-face {
+    font-family: 'Starjedi';
+    src: url('/src/Fonts/Starjedi.ttf') format('truetype');
+
+  }
+ 
+ .parallax {
+    height: 100vh;
+  }
+
+  #scrollDown{
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+
+  }
+  
+  #scrollDown::-webkit-scrollbar{
+    display:none;
+
+  }
+
+
+
+.fondnoir {
+    height: 850px;
+    width: 100%;
+}
+  .starfights {
+    color: white;
+    text-align: center;
+    font-family: 'Starjedi';
+    font-weight: 100;
+    position: relative;
+    top: 20%;
+    font-size: 8em;
+    text-shadow: 2px 2px 15px rgba(227, 85, 255, 0.3), 
+    15px 15px 70px rgba(178, 83, 255, 0.7);
+  }
+
+  .backgroundspace {
+    height: 1000px;
+    width: 2000px;
+    position: relative;
+    bottom: 23%;
+  }
+  .petiteplanete {
+    height: 200px;
+    position: relative;
+    bottom: 40%;
+    left: 5%;
+  }
+.planete {
+    height: 1400px;
+    position: relative;
+    left: 20%;
+    bottom: 25%;
+}
+  .deuxiemeplan {
+    width: 1800px;
+    position: relative;
+    top:35%;
+    left: 8%;
+  }
+.ajoutpremierplan {
+    position: relative;
+    left: 30%;
+    width: 550px;
+    height: 200px;
+    top: 70%;
+}
+  .premierplan {
+    height: 500px;
+    width: 2000px;
+    position: fixed;
+    top: 40%;
+  }
+
+  .sectionCarousel {
+    height: 100vh;
+  }
+  
+  .section3D {
+    padding: 10rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }

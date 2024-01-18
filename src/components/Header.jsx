@@ -1,20 +1,24 @@
 import { Link } from "react-router-dom";
 
-import reactLogo from "../assets/react.svg";
+import starFightsLogo from "../assets/starFightsLogo.png"
+import Button from "./button";
+
+
 
 import "./Header.css";
 
 function Header() {
   return (
-    <nav className="header">
-      <ul className="head-menu">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/jeu ">Jeu</Link>
-        </li>
-      </ul>
+    <nav className="navBar">
+
+      <Link to="/"><img src={starFightsLogo} alt="StarFights logo" className="navBarLogo" /></Link>
+      <div className="buttonNav">
+      <Link to="/Support" className="navSupport">Support</Link>
+      <Link to="/jeu "><Button>Jouer</Button></Link>
+      </div>
+      
+  
+
     </nav>
   );
 }

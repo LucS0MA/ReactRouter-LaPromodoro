@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;1,600&display=swap");
+
+.intro {
+  color: aliceblue;
+  display: flex;
+  width: 100%;
+}
+.imageIntroContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.introPicture {
+  width: 50rem;
+  height: 50%;
+  object-fit: cover;
+}
+
+.introHead {
+  font-family: "StarJedi.ttf";
+    margin-bottom: 2rem;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+.infoIntroContainer {
+  width: 50%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.infoIntroContainer h1 {
+  margin-bottom: 3%;
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: #fad02c;
+  font-family: 'Starjedi';
+}
+
+/* .infoIntroContainer p {
+  margin: 4rem 0;
+  text-align: justify;
+  columns: 2;
+  column-gap: 2rem;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Chakra Petch", sans-serif;
+} */
+
+.infoIntroContainer p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  width: 90%;
+}
